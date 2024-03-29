@@ -282,4 +282,12 @@
 <main>
 @yield('content')
 </main>
+
+<script src="{{asset('assets/js/jquery-3.6.3.min.js')}}"></script>
+<script src="{{asset('assets/js/venobox.min.js')}}"></script>
+<script src="{{asset('assets/js/aos.js')}}"></script>
+<script src="{{asset('assets/js/slick.min.js')}}"></script>
+<script src="{{asset('assets/js/jquery.shuffle.min.js')}}"></script>
+<script src="a{{asset('ssets/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets/js/custom.js')}}"></script>
 </body>
