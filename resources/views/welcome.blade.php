@@ -463,7 +463,7 @@
     <center>
         <div class="">
             <div class="traditional-btn">
-                <a href="{{route('food')}}" class="main-btn-four cormorant-upright-regular">Browser All</a>
+                <a href="{{route('food')}}" class="main-btn-four cormorant-upright-regular">Browse All</a>
             </div>
         </div>
     </center>
