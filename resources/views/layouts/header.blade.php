@@ -7,7 +7,14 @@
     <link rel="shortcut icon" href="{{asset('logo.jpeg')}}" >
 
     <!-- font awesome cdn link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&amp;family=Handlee&amp;family=Inter:wght@300;400;500;600;700&amp;family=Comfortaa:wght@300;400;500;600;700&amp;family=Montaga&amp;family=Pacifico&amp;family=Fredericka+the+Great&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Yellowtail&amp;display=swap" rel="stylesheet">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/slick.css')}}">
@@ -19,6 +26,55 @@
 <body>
 
 
+<style>
+    .head{
+        color: #000000;
+        /*margin: 0;*/
+        font-family: "Great Vibes", cursive;
+        font-size: 50px;
+        line-height: .8em;
+        /*color: #c19d56;*/
+        font-style: normal;
+        margin-bottom: 15px;
+    }
+    .sam{
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        text-transform: uppercase; vertical-align: baseline;  font-size: 30px; line-height: 1.18em;
+        letter-spacing: .1em;
+    }
+    .cormorant-upright-light {
+        font-family: "Cormorant Upright", serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .cormorant-upright-regular {
+        font-family: "Cormorant Upright", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .cormorant-upright-medium {
+        font-family: "Cormorant Upright", serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .cormorant-upright-semibold {
+        font-family: "Cormorant Upright", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .cormorant-upright-bold {
+        font-family: "Cormorant Upright", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+</style>
 
 
 

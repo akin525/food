@@ -6,48 +6,48 @@
             <div class="row align-items-center">
                 <div class="col-lg-7">
 
-                    <div class="banner-rating">
-                        <div class="banner-rating-item">
-                            <div class="icon">
-                                    <span>
-                                        <svg width="90" height="16" viewBox="0 0 90 16" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M6.95816 0.741543C7.27942 -0.247181 8.6782 -0.247181 8.99945 0.741543L10.1473 4.2742C10.291 4.71637 10.703 5.01575 11.1679 5.01575H14.8824C15.922 5.01575 16.3542 6.34607 15.5132 6.95713L12.5081 9.14044C12.132 9.41371 11.9746 9.89811 12.1183 10.3403L13.2661 13.8729C13.5874 14.8617 12.4557 15.6838 11.6147 15.0728L8.6096 12.8895C8.23347 12.6162 7.72415 12.6162 7.34801 12.8895L4.34295 15.0728C3.5019 15.6838 2.37026 14.8617 2.69151 13.8729L3.83935 10.3403C3.98302 9.89811 3.82563 9.41371 3.44949 9.14044L0.444434 6.95713C-0.396625 6.34607 0.0356224 5.01575 1.07523 5.01575H4.78969C5.25461 5.01575 5.66666 4.71637 5.81033 4.2742L6.95816 0.741543Z"
-                                                fill="#F59E0B" />
-                                            <path
-                                                d="M26.9113 0.741543C27.2325 -0.247181 28.6313 -0.247181 28.9526 0.741543L30.1004 4.2742C30.2441 4.71637 30.6561 5.01575 31.1211 5.01575H34.8355C35.8751 5.01575 36.3074 6.34607 35.4663 6.95713L32.4612 9.14044C32.0851 9.41371 31.9277 9.89811 32.0714 10.3403L33.2192 13.8729C33.5405 14.8617 32.4088 15.6838 31.5678 15.0728L28.5627 12.8895C28.1866 12.6162 27.6773 12.6162 27.3011 12.8895L24.2961 15.0728C23.455 15.6838 22.3234 14.8617 22.6446 13.8729L23.7925 10.3403C23.9361 9.89811 23.7788 9.41371 23.4026 9.14044L20.3976 6.95713C19.5565 6.34607 19.9887 5.01575 21.0284 5.01575H24.7428C25.2077 5.01575 25.6198 4.71637 25.7635 4.2742L26.9113 0.741543Z"
-                                                fill="#F59E0B" />
-                                            <path
-                                                d="M46.8722 0.741543C47.1935 -0.247181 48.5923 -0.247181 48.9135 0.741543L50.0613 4.2742C50.205 4.71637 50.6171 5.01575 51.082 5.01575H54.7965C55.8361 5.01575 56.2683 6.34607 55.4272 6.95713L52.4222 9.14044C52.0461 9.41371 51.8887 9.89811 52.0323 10.3403L53.1802 13.8729C53.5014 14.8617 52.3698 15.6838 51.5287 15.0728L48.5237 12.8895C48.1475 12.6162 47.6382 12.6162 47.2621 12.8895L44.257 15.0728C43.416 15.6838 42.2843 14.8617 42.6056 13.8729L43.7534 10.3403C43.8971 9.89811 43.7397 9.41371 43.3636 9.14044L40.3585 6.95713C39.5174 6.34607 39.9497 5.01575 40.9893 5.01575H44.7037C45.1687 5.01575 45.5807 4.71637 45.7244 4.2742L46.8722 0.741543Z"
-                                                fill="#F59E0B" />
-                                            <path
-                                                d="M66.8332 0.741543C67.1544 -0.247181 68.5532 -0.247181 68.8745 0.741543L70.0223 4.2742C70.166 4.71637 70.578 5.01575 71.0429 5.01575H74.7574C75.797 5.01575 76.2292 6.34607 75.3882 6.95713L72.3831 9.14044C72.007 9.41371 71.8496 9.89811 71.9933 10.3403L73.1411 13.8729C73.4624 14.8617 72.3307 15.6838 71.4897 15.0728L68.4846 12.8895C68.1085 12.6162 67.5991 12.6162 67.223 12.8895L64.218 15.0728C63.3769 15.6838 62.2453 14.8617 62.5665 13.8729L63.7143 10.3403C63.858 9.89811 63.7006 9.41371 63.3245 9.14044L60.3194 6.95713C59.4784 6.34607 59.9106 5.01575 60.9502 5.01575H64.6647C65.1296 5.01575 65.5417 4.71637 65.6853 4.2742L66.8332 0.741543Z"
-                                                fill="#F59E0B" />
-                                            <path
-                                                d="M80.7863 0.741543C81.1075 -0.247181 82.5063 -0.247181 82.8276 0.741543L83.9754 4.2742C84.1191 4.71637 84.5311 5.01575 84.9961 5.01575H88.7105C89.7501 5.01575 90.1824 6.34607 89.3413 6.95713L86.3362 9.14044C85.9601 9.41371 85.8027 9.89811 85.9464 10.3403L87.0942 13.8729C87.4155 14.8617 86.2838 15.6838 85.4428 15.0728L82.4377 12.8895C82.0616 12.6162 81.5523 12.6162 81.1761 12.8895L78.1711 15.0728C77.33 15.6838 76.1984 14.8617 76.5196 13.8729L77.6675 10.3403C77.8111 9.89811 77.6538 9.41371 77.2776 9.14044L74.2726 6.95713C73.4315 6.34607 73.8637 5.01575 74.9034 5.01575H78.6178C79.0827 5.01575 79.4948 4.71637 79.6385 4.2742L80.7863 0.741543Z"
-                                                fill="#F59E0B" />
-                                        </svg>
-                                    </span>
-                            </div>
+{{--                    <div class="banner-rating">--}}
+{{--                        <div class="banner-rating-item">--}}
+{{--                            <div class="icon">--}}
+{{--                                    <span>--}}
+{{--                                        <svg width="90" height="16" viewBox="0 0 90 16" fill="none"--}}
+{{--                                             xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                            <path--}}
+{{--                                                d="M6.95816 0.741543C7.27942 -0.247181 8.6782 -0.247181 8.99945 0.741543L10.1473 4.2742C10.291 4.71637 10.703 5.01575 11.1679 5.01575H14.8824C15.922 5.01575 16.3542 6.34607 15.5132 6.95713L12.5081 9.14044C12.132 9.41371 11.9746 9.89811 12.1183 10.3403L13.2661 13.8729C13.5874 14.8617 12.4557 15.6838 11.6147 15.0728L8.6096 12.8895C8.23347 12.6162 7.72415 12.6162 7.34801 12.8895L4.34295 15.0728C3.5019 15.6838 2.37026 14.8617 2.69151 13.8729L3.83935 10.3403C3.98302 9.89811 3.82563 9.41371 3.44949 9.14044L0.444434 6.95713C-0.396625 6.34607 0.0356224 5.01575 1.07523 5.01575H4.78969C5.25461 5.01575 5.66666 4.71637 5.81033 4.2742L6.95816 0.741543Z"--}}
+{{--                                                fill="#F59E0B" />--}}
+{{--                                            <path--}}
+{{--                                                d="M26.9113 0.741543C27.2325 -0.247181 28.6313 -0.247181 28.9526 0.741543L30.1004 4.2742C30.2441 4.71637 30.6561 5.01575 31.1211 5.01575H34.8355C35.8751 5.01575 36.3074 6.34607 35.4663 6.95713L32.4612 9.14044C32.0851 9.41371 31.9277 9.89811 32.0714 10.3403L33.2192 13.8729C33.5405 14.8617 32.4088 15.6838 31.5678 15.0728L28.5627 12.8895C28.1866 12.6162 27.6773 12.6162 27.3011 12.8895L24.2961 15.0728C23.455 15.6838 22.3234 14.8617 22.6446 13.8729L23.7925 10.3403C23.9361 9.89811 23.7788 9.41371 23.4026 9.14044L20.3976 6.95713C19.5565 6.34607 19.9887 5.01575 21.0284 5.01575H24.7428C25.2077 5.01575 25.6198 4.71637 25.7635 4.2742L26.9113 0.741543Z"--}}
+{{--                                                fill="#F59E0B" />--}}
+{{--                                            <path--}}
+{{--                                                d="M46.8722 0.741543C47.1935 -0.247181 48.5923 -0.247181 48.9135 0.741543L50.0613 4.2742C50.205 4.71637 50.6171 5.01575 51.082 5.01575H54.7965C55.8361 5.01575 56.2683 6.34607 55.4272 6.95713L52.4222 9.14044C52.0461 9.41371 51.8887 9.89811 52.0323 10.3403L53.1802 13.8729C53.5014 14.8617 52.3698 15.6838 51.5287 15.0728L48.5237 12.8895C48.1475 12.6162 47.6382 12.6162 47.2621 12.8895L44.257 15.0728C43.416 15.6838 42.2843 14.8617 42.6056 13.8729L43.7534 10.3403C43.8971 9.89811 43.7397 9.41371 43.3636 9.14044L40.3585 6.95713C39.5174 6.34607 39.9497 5.01575 40.9893 5.01575H44.7037C45.1687 5.01575 45.5807 4.71637 45.7244 4.2742L46.8722 0.741543Z"--}}
+{{--                                                fill="#F59E0B" />--}}
+{{--                                            <path--}}
+{{--                                                d="M66.8332 0.741543C67.1544 -0.247181 68.5532 -0.247181 68.8745 0.741543L70.0223 4.2742C70.166 4.71637 70.578 5.01575 71.0429 5.01575H74.7574C75.797 5.01575 76.2292 6.34607 75.3882 6.95713L72.3831 9.14044C72.007 9.41371 71.8496 9.89811 71.9933 10.3403L73.1411 13.8729C73.4624 14.8617 72.3307 15.6838 71.4897 15.0728L68.4846 12.8895C68.1085 12.6162 67.5991 12.6162 67.223 12.8895L64.218 15.0728C63.3769 15.6838 62.2453 14.8617 62.5665 13.8729L63.7143 10.3403C63.858 9.89811 63.7006 9.41371 63.3245 9.14044L60.3194 6.95713C59.4784 6.34607 59.9106 5.01575 60.9502 5.01575H64.6647C65.1296 5.01575 65.5417 4.71637 65.6853 4.2742L66.8332 0.741543Z"--}}
+{{--                                                fill="#F59E0B" />--}}
+{{--                                            <path--}}
+{{--                                                d="M80.7863 0.741543C81.1075 -0.247181 82.5063 -0.247181 82.8276 0.741543L83.9754 4.2742C84.1191 4.71637 84.5311 5.01575 84.9961 5.01575H88.7105C89.7501 5.01575 90.1824 6.34607 89.3413 6.95713L86.3362 9.14044C85.9601 9.41371 85.8027 9.89811 85.9464 10.3403L87.0942 13.8729C87.4155 14.8617 86.2838 15.6838 85.4428 15.0728L82.4377 12.8895C82.0616 12.6162 81.5523 12.6162 81.1761 12.8895L78.1711 15.0728C77.33 15.6838 76.1984 14.8617 76.5196 13.8729L77.6675 10.3403C77.8111 9.89811 77.6538 9.41371 77.2776 9.14044L74.2726 6.95713C73.4315 6.34607 73.8637 5.01575 74.9034 5.01575H78.6178C79.0827 5.01575 79.4948 4.71637 79.6385 4.2742L80.7863 0.741543Z"--}}
+{{--                                                fill="#F59E0B" />--}}
+{{--                                        </svg>--}}
+{{--                                    </span>--}}
+{{--                            </div>--}}
 
-                            <div class="text">
-                                <p>4.8/5 Rating</p>
-                            </div>
-                        </div>
+{{--                            <div class="text">--}}
+{{--                                <p>4.8/5 Rating</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
-                    </div>
+{{--                    </div>--}}
 
 
                     <div class="banner-taiteL">
-                        <h1> Homestyle Nigerian
-                            Cooking <span>Best Enjoyed</span>
-                            with Family.</h1>
+                        <h2 class="head" style="color: white"> Homestyle Nigerian
+                            Cooking <br/>Best Enjoyed
+                            with Family.</h2>
                     </div>
 
                     <div class="banner-taiteL-btn">
 
-                        <a href="#" class="main-btn main-btn-two ">
+                        <a href="#" class="main-btn main-btn-two  cormorant-upright-regular">
                                 <span>
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +62,7 @@
                                 </span>
                             Delivery</a>
 
-                        <a href="#" class=" main-btn-two-banner ">
+                        <a href="#" class=" main-btn-two-banner cormorant-upright-regular ">
                                 <span>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@
                                 </span>
                             Pick Up</a>
 
-                        <a href="#" class=" main-btn-two-banner">
+                        <a href="#" class=" main-btn-two-banner cormorant-upright-regular">
                                 <span>
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -99,16 +99,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5">
-                    <div class="banner-img">
-                        <img src="assets/images/thumb/banner-thunb.png" alt="thumb">
-                        <div class="banner-img-position">
-                            <img src="assets/images/victor/banner-victor.png" alt="victor-img">
-                        </div>
-                    </div>
 
-
-                </div>
             </div>
         </div>
     </section>
@@ -121,14 +112,14 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6  ">
-                    <div class="categories-head">
-                        <h2>Our Categories</h2>
+                    <div class="sam">
+                        <h2 class="sam">Our Categories</h2>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="categories-head-btn">
-                        <a href="all-food.html" class="main-btn">See more</a>
+                        <a href="#" class="main-btn">See more</a>
                     </div>
                 </div>
             </div>
@@ -161,9 +152,9 @@
                             </div>
                         </div>
 
-                        <div class="categories-item-text">
-                            <h3>BurgerKing</h3>
-                            <h4> 25 items</h4>
+                        <div class="cormorant-upright-bold">
+                            <h5>BurgerKing</h5>
+                            <h6> 25 items</h6>
                         </div>
 
                     </div>
@@ -193,9 +184,9 @@
                             </div>
                         </div>
 
-                        <div class="categories-item-text">
-                            <h3>Sandwiches</h3>
-                            <h4> 25 items</h4>
+                        <div class="cormorant-upright-bold">
+                            <h5>Sandwiches</h5>
+                            <h6> 25 items</h6>
                         </div>
 
                     </div>
@@ -226,9 +217,9 @@
                             </div>
                         </div>
 
-                        <div class="categories-item-text">
-                            <h3>KFC</h3>
-                            <h4> 25 items</h4>
+                        <div class="cormorant-upright-bold">
+                            <h5>KFC</h5>
+                            <h6> 25 items</h6>
                         </div>
 
                     </div>
@@ -250,9 +241,9 @@
                             </div>
                         </div>
 
-                        <div class="categories-item-text">
-                            <h3>Nigerian Cuisine</h3>
-                            <h4> 25 items</h4>
+                        <div class="cormorant-upright-bold">
+                            <h5>Nigerian Cuisine</h5>
+                            <h6> 25 items</h6>
                         </div>
 
                     </div>
@@ -271,7 +262,12 @@
 
     <!-- Promotions part-start -->
 
-
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
     <div class="promotions promotions-two">
         <div class="container">
             <div class="row">
@@ -329,8 +325,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="featured-head">
-                        <h2>Our Featured & Newest Restaurant</h2>
+                    <div class="sam text-center">
+                        <h2><b>Our Featured & Newest Restaurant</b></h2>
                     </div>
                 </div>
             </div>
@@ -452,7 +448,7 @@
                         </div>
                     </div>
                     @empty
-                    <h4 class="text-center">No Item Available </h4>
+                    <h4 class=" cormorant-upright-semibold text-center">No Item Available </h4>
                     @endforelse
                 </div>
 
@@ -467,7 +463,7 @@
     <center>
         <div class="">
             <div class="traditional-btn">
-                <a href="{{route('food')}}" class="main-btn-four">Browser All</a>
+                <a href="{{route('food')}}" class="main-btn-four cormorant-upright-regular">Browser All</a>
             </div>
         </div>
     </center>
@@ -481,8 +477,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="popular-head">
-                        <h2>Most Popular Items</h2>
+                    <div class="sam ">
+                        <h2><b>Most Popular Items</b></h2>
                     </div>
                 </div>
             </div>
@@ -590,7 +586,7 @@
                     </div>
                 </div>
                 @empty
-                    <h4 class="text-center">No Item Available </h4>
+                    <h4 class="text-center cormorant-upright-semibold">No Item Available </h4>
                 @endforelse
             </div>
         </div>
@@ -610,7 +606,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12" data-aos="fade-left">
-                    <div class="faq-head">
+                    <div class="sam">
 {{--                        <h2>1303 FAQ: Your Culinary Queries Answered</h2>--}}
                         <h4>Frequently asked
                             questions</h4>
@@ -621,7 +617,7 @@
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    <button class="accordion-button cormorant-upright-semibold" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
                                         What type of cuisine does your restaurant offer?
@@ -629,7 +625,7 @@
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                      aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body cormorant-upright-regular">
                                         We offer [insert type of cuisine, e.g., Nigerian, Asian fusion,
                                         Mediterranean] cuisine that combines traditional flavors with modern twists.
                                     </div>
@@ -637,7 +633,7 @@
                             </div>
                             <div class="accordion-item">
                                 <h4 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button"
+                                    <button class="accordion-button cormorant-upright-semibold collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
                                         Can I make a reservation online?
@@ -645,7 +641,7 @@
                                 </h4>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                      aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body cormorant-upright-regular">
                                         We offer [insert type of cuisine, e.g., Nigerian, Asian fusion,
                                         Mediterranean] cuisine that combines traditional flavors with modern twists.
                                     </div>
@@ -755,10 +751,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="restaurant-taitel">
-                        <h2>Find out Better Restaurant Food Experience</h2>
+                    <div class="restaurant-taitel head">
+                        <h2 class="head">Find out Better Restaurant Food Experience</h2>
 
-                        <h4>We've done it carefully and simply. Combined with the ingredients makes for beautiful
+                        <h4 class="cormorant-upright-semibold"> We've done it carefully and simply. Combined with the ingredients makes for beautiful
                             landings.</h4>
                     </div>
 
