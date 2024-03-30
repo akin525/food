@@ -40,7 +40,7 @@
 
 
                     <div class="banner-taiteL">
-                        <h2 class="head" style="color: white">Professional cooking services for corporate and private events.</h2>
+                        <h2 class="sam" style="color: white">Professional cooking services for corporate and private events.</h2>
                     </div>
 
                     <div class="banner-taiteL-btn">
