@@ -40,9 +40,7 @@
 
 
                     <div class="banner-taiteL">
-                        <h2 class="head" style="color: white"> Homestyle Nigerian
-                            Cooking <br/>Best Enjoyed
-                            with Family.</h2>
+                        <h2 class="head" style="color: white">Professional cooking services for corporate and private events.</h2>
                     </div>
 
                     <div class="banner-taiteL-btn">
@@ -185,7 +183,7 @@
                         </div>
 
                         <div class="cormorant-upright-bold">
-                            <h5>Sandwiches</h5>
+                            <h5>Rice Dishes</h5>
                             <h6> 25 items</h6>
                         </div>
 
@@ -242,7 +240,7 @@
                         </div>
 
                         <div class="cormorant-upright-bold">
-                            <h5>Nigerian Cuisine</h5>
+                            <h5>Continental  <br/>Dishese</h5>
                             <h6> 25 items</h6>
                         </div>
 
@@ -272,7 +270,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-5">
-                    <div class="promotions-img promotions-img-two">
+                    <div class="promotions-img ">
                         <a href="#"> <img src="http://res.cloudinary.com/cokitchen/image/upload/v1629810157/optimized_azdgxj.jpg"
                                                            class="w-100" alt="thumb"></a>
 {{--                        <p class=" font-noirmedium text-sm sm:text-base text-black-200 py-1 ">--}}
@@ -288,7 +286,7 @@
 
                 </div>
                 <div class="col-lg-7 col-md-7">
-                    <div class="promotions-img">
+                    <div class="">
 
                         <a href="#"> <img src="https://res.cloudinary.com/cokitchen/image/upload/q_auto:good/v1629810276/optimized_uz2czw.jpg"
                                                            class="w-100" alt="thumb"></a>
