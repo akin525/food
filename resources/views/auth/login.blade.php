@@ -286,7 +286,7 @@
                                                                  xmlns="http://www.w3.org/2000/svg">
                                                                 <path
                                                                     d="M16.2427 7.75786L7.75739 16.2431M16.2427 16.2431L7.75739 7.75781"
-                                                                    stroke="#F01543" stroke-width="1.5"
+                                                                    stroke="#000000" stroke-width="1.5"
                                                                     stroke-linecap="round" stroke-linejoin="round" />
                                                             </svg>
                                                         </span>

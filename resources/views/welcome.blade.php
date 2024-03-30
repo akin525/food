@@ -156,12 +156,13 @@
                                                     d="M31.7578 19.5703C31.7578 20.5412 30.9709 21.3281 30 21.3281C29.0291 21.3281 28.2422 20.5412 28.2422 19.5703C28.2422 18.5999 29.0291 17.8125 30 17.8125C30.9709 17.8125 31.7578 18.5999 31.7578 19.5703Z" />
                                             </g>
                                         </svg>
+{{--                                        <img width="100" src="https://images.deliveryhero.io/image/customer-assets-glovo/countries/Stores/bjqayhyh0x0trsnujkfn?t=W3siYXV0byI6eyJxIjoibG93In19XQ==" alt="KFC" />--}}
                                     </span>
                             </div>
                         </div>
 
                         <div class="categories-item-text">
-                            <h3>Delish Burger</h3>
+                            <h3>BurgerKing</h3>
                             <h4> 25 items</h4>
                         </div>
 
@@ -226,7 +227,7 @@
                         </div>
 
                         <div class="categories-item-text">
-                            <h3>Mexcan Cuisine</h3>
+                            <h3>KFC</h3>
                             <h4> 25 items</h4>
                         </div>
 
@@ -276,17 +277,42 @@
             <div class="row">
                 <div class="col-lg-5 col-md-5">
                     <div class="promotions-img promotions-img-two">
-                        <a href="foods-details.html"> <img src="assets/images/thumb/PromoBanner-2.png"
+                        <a href="#"> <img src="http://res.cloudinary.com/cokitchen/image/upload/v1629810157/optimized_azdgxj.jpg"
                                                            class="w-100" alt="thumb"></a>
+{{--                        <p class=" font-noirmedium text-sm sm:text-base text-black-200 py-1 ">--}}
+{{--                            <b>14pc Chicken Box Platter</b>--}}
+{{--                        </p>--}}
+{{--                        <p class="text-xs text-black-50 w-[100%] ">--}}
+{{--                            Choice of 1 or 2 chicken flavours.--}}
+{{--                        </p>--}}
+{{--                        <br/>--}}
+{{--                        <button class="btn btn-danger ">Order now</button>--}}
                     </div>
+
+
                 </div>
                 <div class="col-lg-7 col-md-7">
                     <div class="promotions-img">
 
-                        <a href="foods-details.html"> <img src="assets/images/thumb/PromoBanner-1.png"
+                        <a href="#"> <img src="https://res.cloudinary.com/cokitchen/image/upload/q_auto:good/v1629810276/optimized_uz2czw.jpg"
                                                            class="w-100" alt="thumb"></a>
 
                     </div>
+{{--                    <div class=" border  border-grey-70 rounded-[inherit] rounded-t-none flex items-center justify-between px-3  py-6 gap-3 pb-6 h-[130px]">--}}
+{{--                        <div class="flex items-center justify-between gap-3   w-full">--}}
+{{--                            <div class=" w-full">--}}
+{{--                                <p class=" font-noirmedium text-sm sm:text-base text-black-200 py-1 ">--}}
+{{--                                    <b>Smokey Jollof Rice</b>--}}
+{{--                                </p>--}}
+{{--                                <p class="text-xs text-black-50 w-[100%] ">--}}
+{{--                                    Delicious party style smokey jollof rice with choice of protein &amp; sides .--}}
+{{--                                </p>--}}
+{{--                                <br/>--}}
+{{--                                <button class="btn btn-danger ">Order now</button>--}}
+
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
@@ -311,9 +337,10 @@
 
             <div class="row   ">
                 <div class="featured-slick  ">
+                    @forelse($product as $pro)
                     <div class="featured-item">
                         <div class="featured-item-img">
-                            <img src="assets/images/thumb/featured-1.png" class="w-100" alt="featured-thumb">
+                            <img src="{{url($pro['image'])}}" class="w-100" alt="featured-thumb">
 
                             <div class="featured-item-img-overlay">
                                 <div class="featured-item-img-over-text">
@@ -324,7 +351,7 @@
                                                          xmlns="http://www.w3.org/2000/svg">
                                                         <path
                                                             d="M4.31804 6.31804C3.90017 6.7359 3.5687 7.23198 3.34255 7.77795C3.1164 8.32392 3 8.90909 3 9.50004C3 10.091 3.1164 10.6762 3.34255 11.2221C3.5687 11.7681 3.90017 12.2642 4.31804 12.682L12 20.364L19.682 12.682C20.526 11.8381 21.0001 10.6935 21.0001 9.50004C21.0001 8.30656 20.526 7.16196 19.682 6.31804C18.8381 5.47412 17.6935 5.00001 16.5 5.00001C15.3066 5.00001 14.162 5.47412 13.318 6.31804L12 7.63604L10.682 6.31804C10.2642 5.90017 9.7681 5.5687 9.22213 5.34255C8.67616 5.1164 8.09099 5 7.50004 5C6.90909 5 6.32392 5.1164 5.77795 5.34255C5.23198 5.5687 4.7359 5.90017 4.31804 6.31804V6.31804Z"
-                                                            stroke="#F01543" stroke-width="2" stroke-linecap="round"
+                                                            stroke="#000000" stroke-width="2" stroke-linecap="round"
                                                             stroke-linejoin="round" />
                                                     </svg>
                                                 </span>
@@ -341,7 +368,7 @@
                         <div class="featured-item-text">
                             <div class="text-item">
                                 <div class="left">
-                                    <h3>₦3,000.00</h3>
+                                    <h3>₦{{number_format(intval($pro['price'] *1))}}</h3>
                                 </div>
                                 <div class="right">
                                     <div class="icon">
@@ -352,12 +379,12 @@
                                                         fill="#FFB23E" />
                                                 </svg></span>
                                     </div>
-                                    <h5> 4.7(2.5K)</h5>
+                                    <h5> </h5>
                                 </div>
                             </div>
 
                             <div class="text-item-center">
-                                <h3><a href="foods-details.html">Baked Chicken Wings and Legs</a></h3>
+                                <h3><a href="{{route('cakedetail', $pro['id'])}}">{{$pro['name']}}</a></h3>
                             </div>
 
                             <div class="text-item-center-item-box">
@@ -424,571 +451,9 @@
 
                         </div>
                     </div>
-                    <div class="featured-item">
-                        <div class="featured-item-img">
-                            <img src="assets/images/thumb/featured-2.png" class="w-100" alt="featured-thumb">
-
-                            <div class="featured-item-img-overlay">
-                                <div class="featured-item-img-over-text">
-                                    <div class="left-text">
-                                        <div class="icon">
-                                                <span>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M4.31804 6.31804C3.90017 6.7359 3.5687 7.23198 3.34255 7.77795C3.1164 8.32392 3 8.90909 3 9.50004C3 10.091 3.1164 10.6762 3.34255 11.2221C3.5687 11.7681 3.90017 12.2642 4.31804 12.682L12 20.364L19.682 12.682C20.526 11.8381 21.0001 10.6935 21.0001 9.50004C21.0001 8.30656 20.526 7.16196 19.682 6.31804C18.8381 5.47412 17.6935 5.00001 16.5 5.00001C15.3066 5.00001 14.162 5.47412 13.318 6.31804L12 7.63604L10.682 6.31804C10.2642 5.90017 9.7681 5.5687 9.22213 5.34255C8.67616 5.1164 8.09099 5 7.50004 5C6.90909 5 6.32392 5.1164 5.77795 5.34255C5.23198 5.5687 4.7359 5.90017 4.31804 6.31804V6.31804Z"
-                                                            stroke="#F01543" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </span>
-                                        </div>
-                                    </div>
-                                    <div class="right-text">
-                                        <h5>20% Off </h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="featured-item-text">
-                            <div class="text-item">
-                                <div class="left">
-                                    <h3>₦3,000.00</h3>
-                                </div>
-                                <div class="right">
-                                    <div class="icon">
-                                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z"
-                                                        fill="#FFB23E" />
-                                                </svg></span>
-                                    </div>
-                                    <h5> 4.7(2.5K)</h5>
-                                </div>
-                            </div>
-
-                            <div class="text-item-center">
-                                <h3><a href="foods-details.html">Chicken Skewers with Slices</a></h3>
-                            </div>
-
-                            <div class="text-item-center-item-box">
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>2 Piece Chicken</h5>
-                                    </div>
-                                </div>
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>Spicy Sauce</h5>
-                                    </div>
-                                </div>
-
-                                <div class="featured-item-btn">
-                                    <a href="#" class="main-btn-three">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round" />
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="featured-item">
-                        <div class="featured-item-img">
-                            <img src="assets/images/thumb/featured-3.png" class="w-100" alt="featured-thumb">
-
-                            <div class="featured-item-img-overlay">
-                                <div class="featured-item-img-over-text">
-                                    <div class="left-text">
-                                        <div class="icon">
-                                                <span>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M4.31804 6.31804C3.90017 6.7359 3.5687 7.23198 3.34255 7.77795C3.1164 8.32392 3 8.90909 3 9.50004C3 10.091 3.1164 10.6762 3.34255 11.2221C3.5687 11.7681 3.90017 12.2642 4.31804 12.682L12 20.364L19.682 12.682C20.526 11.8381 21.0001 10.6935 21.0001 9.50004C21.0001 8.30656 20.526 7.16196 19.682 6.31804C18.8381 5.47412 17.6935 5.00001 16.5 5.00001C15.3066 5.00001 14.162 5.47412 13.318 6.31804L12 7.63604L10.682 6.31804C10.2642 5.90017 9.7681 5.5687 9.22213 5.34255C8.67616 5.1164 8.09099 5 7.50004 5C6.90909 5 6.32392 5.1164 5.77795 5.34255C5.23198 5.5687 4.7359 5.90017 4.31804 6.31804V6.31804Z"
-                                                            stroke="#F01543" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </span>
-                                        </div>
-                                    </div>
-                                    <div class="right-text">
-                                        <h5>20% Off </h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="featured-item-text">
-                            <div class="text-item">
-                                <div class="left">
-                                    <h3>₦3,000.00</h3>
-                                </div>
-                                <div class="right">
-                                    <div class="icon">
-                                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z"
-                                                        fill="#FFB23E" />
-                                                </svg></span>
-                                    </div>
-                                    <h5> 4.7(2.5K)</h5>
-                                </div>
-                            </div>
-
-                            <div class="text-item-center">
-                                <h3><a href="foods-details.html">Meat Cheese Burger with French</a></h3>
-                            </div>
-
-                            <div class="text-item-center-item-box">
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>1 Piece Meat</h5>
-                                    </div>
-                                </div>
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>Spicy Sauce</h5>
-                                    </div>
-                                </div>
-
-                                <div class="featured-item-btn">
-                                    <a href="#" class="main-btn-three">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round" />
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="featured-item">
-                        <div class="featured-item-img">
-                            <img src="assets/images/thumb/featured-1.png" class="w-100" alt="featured-thumb">
-
-                            <div class="featured-item-img-overlay">
-                                <div class="featured-item-img-over-text">
-                                    <div class="left-text">
-                                        <div class="icon">
-                                                <span>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M4.31804 6.31804C3.90017 6.7359 3.5687 7.23198 3.34255 7.77795C3.1164 8.32392 3 8.90909 3 9.50004C3 10.091 3.1164 10.6762 3.34255 11.2221C3.5687 11.7681 3.90017 12.2642 4.31804 12.682L12 20.364L19.682 12.682C20.526 11.8381 21.0001 10.6935 21.0001 9.50004C21.0001 8.30656 20.526 7.16196 19.682 6.31804C18.8381 5.47412 17.6935 5.00001 16.5 5.00001C15.3066 5.00001 14.162 5.47412 13.318 6.31804L12 7.63604L10.682 6.31804C10.2642 5.90017 9.7681 5.5687 9.22213 5.34255C8.67616 5.1164 8.09099 5 7.50004 5C6.90909 5 6.32392 5.1164 5.77795 5.34255C5.23198 5.5687 4.7359 5.90017 4.31804 6.31804V6.31804Z"
-                                                            stroke="#F01543" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </span>
-                                        </div>
-                                    </div>
-                                    <div class="right-text">
-                                        <h5>20% Off </h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="featured-item-text">
-                            <div class="text-item">
-                                <div class="left">
-                                    <h3>₦3,000.00</h3>
-                                </div>
-                                <div class="right">
-                                    <div class="icon">
-                                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z"
-                                                        fill="#FFB23E" />
-                                                </svg></span>
-                                    </div>
-                                    <h5> 4.7(2.5K)</h5>
-                                </div>
-                            </div>
-
-                            <div class="text-item-center">
-                                <h3><a href="foods-details.html">Baked Chicken Wings and Legs</a></h3>
-                            </div>
-
-                            <div class="text-item-center-item-box">
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>4 Piece Chicken</h5>
-                                    </div>
-                                </div>
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>Spicy Sauce</h5>
-                                    </div>
-                                </div>
-
-                                <div class="featured-item-btn">
-                                    <a href="#" class="main-btn-three">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round" />
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="featured-item">
-                        <div class="featured-item-img">
-                            <img src="assets/images/thumb/featured-2.png" class="w-100" alt="featured-thumb">
-
-                            <div class="featured-item-img-overlay">
-                                <div class="featured-item-img-over-text">
-                                    <div class="left-text">
-                                        <div class="icon">
-                                                <span>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M4.31804 6.31804C3.90017 6.7359 3.5687 7.23198 3.34255 7.77795C3.1164 8.32392 3 8.90909 3 9.50004C3 10.091 3.1164 10.6762 3.34255 11.2221C3.5687 11.7681 3.90017 12.2642 4.31804 12.682L12 20.364L19.682 12.682C20.526 11.8381 21.0001 10.6935 21.0001 9.50004C21.0001 8.30656 20.526 7.16196 19.682 6.31804C18.8381 5.47412 17.6935 5.00001 16.5 5.00001C15.3066 5.00001 14.162 5.47412 13.318 6.31804L12 7.63604L10.682 6.31804C10.2642 5.90017 9.7681 5.5687 9.22213 5.34255C8.67616 5.1164 8.09099 5 7.50004 5C6.90909 5 6.32392 5.1164 5.77795 5.34255C5.23198 5.5687 4.7359 5.90017 4.31804 6.31804V6.31804Z"
-                                                            stroke="#F01543" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </span>
-                                        </div>
-                                    </div>
-                                    <div class="right-text">
-                                        <h5>20% Off </h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="featured-item-text">
-                            <div class="text-item">
-                                <div class="left">
-                                    <h3>₦3,000.00</h3>
-                                </div>
-                                <div class="right">
-                                    <div class="icon">
-                                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z"
-                                                        fill="#FFB23E" />
-                                                </svg></span>
-                                    </div>
-                                    <h5> 4.7(2.5K)</h5>
-                                </div>
-                            </div>
-
-                            <div class="text-item-center">
-                                <h3><a href="#">Chicken Skewers with Slices</a></h3>
-                            </div>
-
-                            <div class="text-item-center-item-box">
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>2 Piece Chicken</h5>
-                                    </div>
-                                </div>
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>Spicy Sauce</h5>
-                                    </div>
-                                </div>
-
-                                <div class="featured-item-btn">
-                                    <a href="#" class="main-btn-three">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round" />
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="featured-item">
-                        <div class="featured-item-img">
-                            <img src="assets/images/thumb/featured-3.png" class="w-100" alt="featured-thumb">
-
-                            <div class="featured-item-img-overlay">
-                                <div class="featured-item-img-over-text">
-                                    <div class="left-text">
-                                        <div class="icon">
-                                                <span>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M4.31804 6.31804C3.90017 6.7359 3.5687 7.23198 3.34255 7.77795C3.1164 8.32392 3 8.90909 3 9.50004C3 10.091 3.1164 10.6762 3.34255 11.2221C3.5687 11.7681 3.90017 12.2642 4.31804 12.682L12 20.364L19.682 12.682C20.526 11.8381 21.0001 10.6935 21.0001 9.50004C21.0001 8.30656 20.526 7.16196 19.682 6.31804C18.8381 5.47412 17.6935 5.00001 16.5 5.00001C15.3066 5.00001 14.162 5.47412 13.318 6.31804L12 7.63604L10.682 6.31804C10.2642 5.90017 9.7681 5.5687 9.22213 5.34255C8.67616 5.1164 8.09099 5 7.50004 5C6.90909 5 6.32392 5.1164 5.77795 5.34255C5.23198 5.5687 4.7359 5.90017 4.31804 6.31804V6.31804Z"
-                                                            stroke="#F01543" stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </span>
-                                        </div>
-                                    </div>
-                                    <div class="right-text">
-                                        <h5>20% Off </h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="featured-item-text">
-                            <div class="text-item">
-                                <div class="left">
-                                    <h3>₦3,000.00</h3>
-                                </div>
-                                <div class="right">
-                                    <div class="icon">
-                                            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.0328 3.27141C10.8375 1.5762 13.1625 1.5762 13.9672 3.27141L15.3579 6.20118C15.6774 6.87435 16.2951 7.34094 17.0096 7.44888L20.1193 7.91869C21.9187 8.19053 22.6371 10.4895 21.3351 11.8091L19.0849 14.0896C18.5679 14.6136 18.332 15.3685 18.454 16.1084L18.9852 19.3285C19.2926 21.1918 17.4116 22.6126 15.8022 21.7329L13.0208 20.2126C12.3817 19.8633 11.6183 19.8633 10.9792 20.2126L8.19776 21.7329C6.58839 22.6126 4.70742 21.1918 5.01479 19.3286L5.54599 16.1084C5.66804 15.3685 5.43211 14.6136 4.91508 14.0896L2.66488 11.8091C1.36287 10.4895 2.08133 8.19053 3.88066 7.91869L6.99037 7.44888C7.70489 7.34094 8.32257 6.87435 8.64211 6.20118L10.0328 3.27141Z"
-                                                        fill="#FFB23E" />
-                                                </svg></span>
-                                    </div>
-                                    <h5> 4.7(2.5K)</h5>
-                                </div>
-                            </div>
-
-                            <div class="text-item-center">
-                                <h3><a href="#">Meat Cheese Burger with French</a></h3>
-                            </div>
-
-                            <div class="text-item-center-item-box">
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>1 Piece Meat</h5>
-                                    </div>
-                                </div>
-                                <div class="text-item-center-item">
-                                    <div class="icon">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                    </div>
-
-                                    <div class="text">
-                                        <h5>Spicy Sauce</h5>
-                                    </div>
-                                </div>
-
-                                <div class="featured-item-btn">
-                                    <a href="#" class="main-btn-three">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5" />
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round" />
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                    @empty
+                    <h4 class="text-center">No Item Available </h4>
+                    @endforelse
                 </div>
 
             </div>
@@ -1002,7 +467,7 @@
     <center>
         <div class="">
             <div class="traditional-btn">
-                <a href="all-food.html" class="main-btn-four">Browser All</a>
+                <a href="{{route('food')}}" class="main-btn-four">Browser All</a>
             </div>
         </div>
     </center>
@@ -1023,10 +488,11 @@
             </div>
 
             <div class="row popular-item-box-mt">
+                @forelse($hot as $hots)
                 <div class="col-lg-6" data-aos="fade-up">
                     <div class="popular-item-box">
                         <div class="popular-item-box-img">
-                            <img src="assets/images/thumb/popular-1.png" alt="thumb">
+                            <img src="{{url($hots['image'])}}" alt="thumb">
 
                             <div class="popular-item-box-img-overlay">
                                 <div class="icon">
@@ -1041,7 +507,7 @@
                                 </div>
 
                                 <div class="text">
-                                    <p>4.7(2.5K)</p>
+{{--                                    <p>4.7(2.5K)</p>--}}
                                 </div>
                             </div>
 
@@ -1049,7 +515,7 @@
 
                         <div class="popular-inner-box">
                             <div class="popular-item-box-text">
-                                <h3>Quinoa-Stuffed Bell Pepper</h3>
+                                <h3>{{$hots['name']}}</h3>
                             </div>
 
                             <div class="popular-inner-item">
@@ -1089,7 +555,7 @@
 
                             <div class="popular-inner-item-btm">
                                 <div class="text">
-                                    <h3>₦3,000.00.00</h3>
+                                    <h3>₦{{number_format(intval($hots['price'] *1))}}</h3>
                                 </div>
 
                                 <div class="popular-inner-item-btn">
@@ -1123,496 +589,9 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6 res-popular-item-mt-30px" data-aos="fade-up">
-                    <div class="popular-item-box">
-                        <div class="popular-item-box-img">
-                            <img src="assets/images/thumb/popular-2.png" alt="thumb">
-                            <div class="popular-item-box-img-overlay">
-                                <div class="icon">
-                                        <span>
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
-                                                    fill="#FFB23E" />
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="text">
-                                    <p>4.7(2.5K)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="popular-inner-box">
-                            <div class="popular-item-box-text">
-                                <h3>Grilled Pork Chop Chutney</h3>
-                            </div>
-
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>4 Paces Chicken</h5>
-                                </div>
-                            </div>
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>Spicy Sauce</h5>
-                                </div>
-                            </div>
-
-                            <div class="popular-inner-item-btm">
-                                <div class="text">
-                                    <h3>₦3,000.00</h3>
-                                </div>
-
-                                <div class="popular-inner-item-btn">
-                                    <a href="#" class="main-btn-five">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round"></path>
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-lg-6 popular-item-mt-30px" data-aos="fade-up">
-                    <div class="popular-item-box">
-                        <div class="popular-item-box-img">
-                            <img src="assets/images/thumb/popular-3.png" alt="thumb">
-                            <div class="popular-item-box-img-overlay">
-                                <div class="icon">
-                                        <span>
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
-                                                    fill="#FFB23E" />
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="text">
-                                    <p>4.7(2.5K)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="popular-inner-box">
-                            <div class="popular-item-box-text">
-                                <h3>Fish Tacos Chipotle Crema</h3>
-                            </div>
-
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>4 Paces Chicken</h5>
-                                </div>
-                            </div>
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>Spicy Sauce</h5>
-                                </div>
-                            </div>
-
-                            <div class="popular-inner-item-btm">
-                                <div class="text">
-                                    <h3>₦3,000.00</h3>
-                                </div>
-
-                                <div class="popular-inner-item-btn">
-                                    <a href="#" class="main-btn-five">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round"></path>
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-lg-6 popular-item-mt-30px" data-aos="fade-up">
-                    <div class="popular-item-box">
-                        <div class="popular-item-box-img">
-                            <img src="assets/images/thumb/popular-4.png" alt="thumb">
-                            <div class="popular-item-box-img-overlay">
-                                <div class="icon">
-                                        <span>
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
-                                                    fill="#FFB23E" />
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="text">
-                                    <p>4.7(2.5K)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="popular-inner-box">
-                            <div class="popular-item-box-text">
-                                <h3>BBQ Pulled Pork Sandwich</h3>
-                            </div>
-
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>4 Paces Chicken</h5>
-                                </div>
-                            </div>
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>Spicy Sauce</h5>
-                                </div>
-                            </div>
-
-                            <div class="popular-inner-item-btm">
-                                <div class="text">
-                                    <h3>₦3,000.00</h3>
-                                </div>
-
-                                <div class="popular-inner-item-btn">
-                                    <a href="#" class="main-btn-five">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round"></path>
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-lg-6 popular-item-mt-30px" data-aos="fade-up">
-                    <div class="popular-item-box">
-                        <div class="popular-item-box-img">
-                            <img src="assets/images/thumb/popular-5.png" alt="thumb">
-                            <div class="popular-item-box-img-overlay">
-                                <div class="icon">
-                                        <span>
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
-                                                    fill="#FFB23E" />
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="text">
-                                    <p>4.7(2.5K)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="popular-inner-box">
-                            <div class="popular-item-box-text">
-                                <h3>Greens Salad Vinaigrette</h3>
-                            </div>
-
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>4 Paces Chicken</h5>
-                                </div>
-                            </div>
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>Spicy Sauce</h5>
-                                </div>
-                            </div>
-
-                            <div class="popular-inner-item-btm">
-                                <div class="text">
-                                    <h3>₦3,000.00</h3>
-                                </div>
-
-                                <div class="popular-inner-item-btn">
-                                    <a href="#" class="main-btn-five">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round"></path>
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-lg-6 popular-item-mt-30px" data-aos="fade-up">
-                    <div class="popular-item-box">
-                        <div class="popular-item-box-img">
-                            <img src="assets/images/thumb/popular-6.png" alt="thumb">
-                            <div class="popular-item-box-img-overlay">
-                                <div class="icon">
-                                        <span>
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M8.361 2.72748C9.03157 1.3148 10.9691 1.3148 11.6396 2.72748L12.7986 5.16895C13.0649 5.72993 13.5796 6.11875 14.175 6.20871L16.7664 6.60021C18.2659 6.82675 18.8646 8.74259 17.7796 9.84221L15.9044 11.7426C15.4736 12.1793 15.277 12.8084 15.3787 13.425L15.8213 16.1084C16.0775 17.6611 14.51 18.8452 13.1689 18.1121L10.851 16.8451C10.3184 16.554 9.68221 16.554 9.14964 16.8451L6.8318 18.1121C5.49065 18.8452 3.92318 17.6611 4.17931 16.1084L4.62198 13.425C4.72369 12.8084 4.52709 12.1793 4.09623 11.7426L2.22105 9.84221C1.13605 8.74259 1.73477 6.82675 3.23421 6.60021L5.82564 6.20871C6.42107 6.11875 6.9358 5.72993 7.20208 5.16895L8.361 2.72748Z"
-                                                    fill="#FFB23E" />
-                                            </svg>
-                                        </span>
-                                </div>
-
-                                <div class="text">
-                                    <p>4.7(2.5K)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="popular-inner-box">
-                            <div class="popular-item-box-text">
-                                <h3>Bruschetta Tomato & Basil</h3>
-                            </div>
-
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>4 Paces Chicken</h5>
-                                </div>
-                            </div>
-                            <div class="popular-inner-item">
-                                <div class="icon">
-                                        <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                   xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_304_21999)">
-                                                    <path
-                                                        d="M6.66699 10.0013L8.77923 11.9023C9.13881 12.2259 9.69748 12.1764 9.99449 11.7945L13.3337 7.5013M10.0003 18.3346C14.6027 18.3346 18.3337 14.6037 18.3337 10.0013C18.3337 5.39893 14.6027 1.66797 10.0003 1.66797C5.39795 1.66797 1.66699 5.39893 1.66699 10.0013C1.66699 14.6037 5.39795 18.3346 10.0003 18.3346Z"
-                                                        stroke="#FE724C" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </svg></span>
-                                </div>
-
-                                <div class="text">
-                                    <h5>Spicy Sauce</h5>
-                                </div>
-                            </div>
-
-                            <div class="popular-inner-item-btm">
-                                <div class="text">
-                                    <h3>₦3,000.0000</h3>
-                                </div>
-
-                                <div class="popular-inner-item-btn">
-                                    <a href="#" class="main-btn-five">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path
-                                                        d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
-                                                        stroke-width="1.5"></path>
-                                                    <path d="M14 8L14 13" stroke-width="1.5" stroke-linecap="round"
-                                                          stroke-linejoin="round"></path>
-                                                    <path d="M16.5 10.5L11.5 10.5" stroke-width="1.5"
-                                                          stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </span>
-                                        Add to Cart
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
+                @empty
+                    <h4 class="text-center">No Item Available </h4>
+                @endforelse
             </div>
         </div>
     </section>
@@ -1632,7 +611,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12" data-aos="fade-left">
                     <div class="faq-head">
-                        <h2>Foodie FAQ: Your Culinary Queries Answered</h2>
+{{--                        <h2>1303 FAQ: Your Culinary Queries Answered</h2>--}}
+                        <h4>Frequently asked
+                            questions</h4>
                     </div>
 
 
@@ -1655,13 +636,13 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
+                                <h4 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
                                         Can I make a reservation online?
                                     </button>
-                                </h2>
+                                </h4>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                      aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
@@ -1670,40 +651,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                        Is there a dress code for dining at your restaurant?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        We offer [insert type of cuisine, e.g., Nigerian, Asian fusion,
-                                        Mediterranean] cuisine that combines traditional flavors with modern twists.
-                                    </div>
-                                </div>
-                            </div>
 
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingfour">
-                                    <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapsefour"
-                                            aria-expanded="false" aria-controls="collapsefour">
-                                        Is there a dress code for dining at your restaurant?
-                                    </button>
-                                </h2>
-                                <div id="collapsefour" class="accordion-collapse collapse"
-                                     aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        We offer [insert type of cuisine, e.g., Nigerian, Asian fusion,
-                                        Mediterranean] cuisine that combines traditional flavors with modern twists.
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -1717,7 +665,7 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="faq-img  ">
-                                <img src="assets/images/thumb/faq-1.png" class="w-100" alt="thumb">
+                                <img src="{{asset('assets/images/fd3.jpg')}}" class="w-100" alt="thumb">
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -1778,7 +726,7 @@
                             <div class="faq-img  ">
 
                                 <div class="img-animetion">
-                                    <img src="assets/images/thumb/faq-4.png" alt="thumb">
+                                    <img src="{{asset('assets/images/fd4.jpg')}}" alt="thumb">
                                 </div>
 
                             </div>
