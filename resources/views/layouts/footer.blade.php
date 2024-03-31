@@ -8,9 +8,9 @@
                     </div>
                 </div>
 
-                <div class="footer-text">
-                    <h4>At 13'03, we invite you to embark on a journey of taste and delight.Our tables are more
-                        than just places.</h4>
+                <div class="cormorant-upright-regular text-white" style="font-size: 10px" >
+                    <h6>At 13'03, we invite you to embark on a journey of taste and delight.Our tables are more
+                        than just places.</h6>
                 </div>
 
                 <div class="footer-icon">
