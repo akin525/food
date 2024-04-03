@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('tittle')</title>
-    <script src="{{assert('cdn-cgi/apps/head/2oc_RD5SS6wgN5SiQnSEnWVNHg8.js')}}"></script><link rel="icon" href="{{asset('assets/images/eko.png')}}">
+    <script src="{{assert('cdn-cgi/apps/head/2oc_RD5SS6wgN5SiQnSEnWVNHg8.js')}}"></script><link rel="icon" href="{{asset('logo.jpeg')}}">
     <link rel="stylesheet" href="{{asset('admin/assets/vendors/lightgallery/css/lightgallery-bundle.min.css')}}">
     <link rel="stylesheet" href="{{asset('admin/assets/vendors/fontawesome/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('admin//assets/vendors/animate/animate.min.css')}}">
@@ -58,8 +58,8 @@
                 <div class="sticky-area border-right">
                     <div class="d-flex px-6 px-xl-10 w-100 border-bottom py-7 justify-content-between">
                         <a href="{{route('admin/dashboard')}}" class="navbar-brand py-4">
-                            <img class="light-mode-img" src="{{asset('assets/images/eko.png')}}" width="50" alt="Glowing - Bootstrap 5 HTML Templates">
-                            <img class="dark-mode-img" src="{{asset('assets/images/eko.png')}}" width="50" alt="Glowing - Bootstrap 5 HTML Templates"></a>
+                            <img class="light-mode-img" src="{{asset('logo.jpeg')}}" width="100" alt="Glowing - Bootstrap 5 HTML Templates">
+                            <img class="dark-mode-img" src="{{asset('logo.jpeg')}}" width="100" alt="Glowing - Bootstrap 5 HTML Templates"></a>
                         <div class="ml-auto d-flex align-items-center ">
                             <div class="d-flex align-items-center d-xl-none">
                                 <div class="color-modes position-relative px-4">
@@ -127,31 +127,31 @@
                                     <span class="sidebar-item-text fs-14px fw-semibold">Dashboard</span>
                                 </a>
                             </li>
-                            <li class="list-group-item px-0 py-0 sidebar-item mb-3 has-children border-0">
-                                <a href="#var" class="text-heading text-decoration-none lh-1 d-flex sidebar-link align-items-center py-5 px-6 position-relative" data-bs-toggle="collapse" aria-expanded="false" title="Products">
-<span class="sidebar-item-icon d-inline-block w-40px text-muted">
-<i class="fas fa-shopping-bag"></i>
-</span>
-                                    <span class="sidebar-item-text fs-14px fw-semibold">Variation</span>
-                                    <span class="position-absolute top-50 end-5 translate-middle-y"><i class="far fa-angle-down"></i></span>
-                                </a>
-                                <div class="collapse menu-collapse" id="var">
-                                    <ul class="sub-menu list-unstyled">
-                                        <li class="sidebar-item">
-                                            <a class="sidebar-link pe-5 ps-8 py-5 lh-1 text-decoration-none fs-14px fw-semibold" href="{{route('admin/color')}}" title="Product List">Color</a>
-                                        </li>
-                                        <li class="sidebar-item">
-                                            <a class="sidebar-link pe-5 ps-8 py-5 lh-1 text-decoration-none fs-14px fw-semibold" href="{{route('admin/size')}}" title="Product List">Sizes</a>
-                                        </li>
-                                        <li class="sidebar-item">
-                                            <a class="sidebar-link pe-5 ps-8 py-5 lh-1 text-decoration-none fs-14px fw-semibold" href="{{route('admin/flavour')}}" title="Product Grid">Flavour</a>
-                                        </li>
-                                        <li class="sidebar-item">
-                                            <a class="sidebar-link pe-5 ps-8 py-5 lh-1 text-decoration-none fs-14px fw-semibold" href="{{route('admin/layers')}}" title="Product Grid">Layers <span class="badge badge-soft-danger">Hots</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
+{{--                            <li class="list-group-item px-0 py-0 sidebar-item mb-3 has-children border-0">--}}
+{{--                                <a href="#var" class="text-heading text-decoration-none lh-1 d-flex sidebar-link align-items-center py-5 px-6 position-relative" data-bs-toggle="collapse" aria-expanded="false" title="Products">--}}
+{{--<span class="sidebar-item-icon d-inline-block w-40px text-muted">--}}
+{{--<i class="fas fa-shopping-bag"></i>--}}
+{{--</span>--}}
+{{--                                    <span class="sidebar-item-text fs-14px fw-semibold">Variation</span>--}}
+{{--                                    <span class="position-absolute top-50 end-5 translate-middle-y"><i class="far fa-angle-down"></i></span>--}}
+{{--                                </a>--}}
+{{--                                <div class="collapse menu-collapse" id="var">--}}
+{{--                                    <ul class="sub-menu list-unstyled">--}}
+{{--                                        <li class="sidebar-item">--}}
+{{--                                            <a class="sidebar-link pe-5 ps-8 py-5 lh-1 text-decoration-none fs-14px fw-semibold" href="{{route('admin/color')}}" title="Product List">Color</a>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="sidebar-item">--}}
+{{--                                            <a class="sidebar-link pe-5 ps-8 py-5 lh-1 text-decoration-none fs-14px fw-semibold" href="{{route('admin/size')}}" title="Product List">Sizes</a>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="sidebar-item">--}}
+{{--                                            <a class="sidebar-link pe-5 ps-8 py-5 lh-1 text-decoration-none fs-14px fw-semibold" href="{{route('admin/flavour')}}" title="Product Grid">Flavour</a>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="sidebar-item">--}}
+{{--                                            <a class="sidebar-link pe-5 ps-8 py-5 lh-1 text-decoration-none fs-14px fw-semibold" href="{{route('admin/layers')}}" title="Product Grid">Layers <span class="badge badge-soft-danger">Hots</span></a>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
                             <li class="list-group-item px-0 py-0 sidebar-item mb-3 has-children border-0">
                                 <a href="#product" class="text-heading text-decoration-none lh-1 d-flex sidebar-link align-items-center py-5 px-6 position-relative" data-bs-toggle="collapse" aria-expanded="false" title="Products">
 <span class="sidebar-item-icon d-inline-block w-40px text-muted">

@@ -11,10 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&amp;family=Handlee&amp;family=Inter:wght@300;400;500;600;700&amp;family=Comfortaa:wght@300;400;500;600;700&amp;family=Montaga&amp;family=Pacifico&amp;family=Fredericka+the+Great&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Yellowtail&amp;display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{asset('cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/slick.css')}}">
@@ -73,6 +77,15 @@
         font-weight: 700;
         font-style: normal;
     }
+
+
+    .jost {
+               font-family: "Jost", sans-serif;
+               font-optical-sizing: auto;
+               font-weight: 600;
+               font-style: normal;
+           }
+
 
 </style>
 
@@ -181,16 +194,30 @@
                             </div>
 
                             <div class="menu">
-                                <ul>
-                                    <li><a href="{{url('/')}}">Home
+                                <ul class="jost">
+                                    <li class="jost"><a href="{{url('/')}}">Home</a></li>
+                                    <li class="jost"><a href="{{route('about')}}">About-Us</a></li>
+                                    <li class="jost"><a href="{{route('food')}}">Menu
+                                            <span>
+                                                    <i class="fa-solid fa-angle-down">
 
+                                                    </i>
+                                                </span>
+                                        </a>
+                                        <ul>
+                                            @isset($category)
+                                                @forelse($category as $cat)
+                                                    <li><a class="sub-item-link" href="{{route('category', $cat['name'])}}"><span>{{$cat['name']}}</span></a></li>
+                                                @empty
+                                                    <li><a class="sub-item-link" href="#"><span>No Category</span></a></li>
+                                                @endforelse
+                                            @endisset
+                                        </ul>
                                     </li>
-                                    <li><a href="{{route('about')}}">About-Us</a></li>
-                                    <li><a href="{{route('food')}}">Foods</a></li>
-                                    @auth
-                                    <li><a href="{{route('dashboard')}}">Dashboard </a>
-                                    </li>
-                                    @endauth
+{{--                                    @auth--}}
+{{--                                    <li><a href="{{route('dashboard')}}">Dashboard </a>--}}
+{{--                                    </li>--}}
+{{--                                    @endauth--}}
                                 </ul>
                             </div>
                         </div>

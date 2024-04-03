@@ -84,7 +84,7 @@ class ProductsController
          'fee'=>$request['fee'],
      ]);
 
-     $mg="product post was Successful";
+     $mg="product post as most popular features";
      return redirect('admin/addproduct1')->with('success', $mg);
 
  }

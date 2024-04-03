@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/eko.png')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('logo.jpeg')}}">
 
     <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
 
@@ -93,7 +93,7 @@
             transition: all .5s ease;
         }
         .form__input:focus{
-            border-bottom-color: #977510;
+            border-bottom-color: #000000;
             box-shadow: 0 0 5px rgba(0,80,80,.4);
             border-radius: 4px;
         }
@@ -102,15 +102,15 @@
             align-content: center;
             width: 70%;
             border-radius: 30px;
-            color: #e5b619;
+            color: #000000;
             font-weight: 600;
             background-color: #fff;
-            border: 1px solid #e5b619;
+            border: 1px solid #000000;
             margin-top: 1.5em;
             margin-bottom: 1em;
         }
         .btn:hover, .btn:focus{
-            background-color: #e5b619;
+            background-color: #000000;
             color:#fff;
         }
     </style>
@@ -131,7 +131,7 @@
                 <span class="company__logo"><h2><span class="fa fa-android"></span></h2></span>
                 {{--            <h4 class="company_title">Your Company Logo</h4>--}}
                 <center>
-                    <img width="100" src="{{asset('assets/images/eko.png')}}" alt=""/>
+                    <img width="200" src="{{asset('logo.jpeg')}}" alt=""/>
                 </center>
             </div>
             <div class="col-md-8 col-xs-12 col-sm-12 login_form ">

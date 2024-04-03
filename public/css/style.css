@@ -4046,11 +4046,11 @@ p {
   margin-top: 80px;
 }
 .food-details-section .food-details-slick .slider-for-img {
-  width: 100%;
+  width: 50%;
 }
 .food-details-section .food-details-slick .slider-for-img img {
-  width: 870px;
-  height: 460px;
+  width: 600px;
+  /*height: 460px;*/
 }
 .food-details-section .food-details-slick .slider-nav {
   margin-top: 27px;

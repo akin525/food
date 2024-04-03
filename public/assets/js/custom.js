@@ -2,17 +2,17 @@ $(function(){
 
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -66,7 +66,7 @@ closeBtn.addEventListener("click", closeNav);
 
 
 
-  
+
   $(window).on('load', function () {
     if ($(".shafull-container").length > 0) {
         var $grid = $('.shafull-container');
@@ -91,7 +91,7 @@ closeBtn.addEventListener("click", closeNav);
 
 
 
-// profile dropdown 
+// profile dropdown
 const dropdownProfile=document.getElementsByClassName('click')
 const allDropdown= document.getElementsByClassName("header-dropdown")
 document.getElementsByTagName("html")[0].addEventListener("click",(event)=>{
@@ -125,7 +125,7 @@ for(let i=0; i<dropdownProfile.length; i++){
 
 
 
-// map 
+// map
 
 
 
@@ -172,11 +172,11 @@ $('.slider-nav').slick({
 
 
 
-  // featured-slick  
+  // featured-slick
 
-  
 
-  
+
+
 $('.featured-slick ').slick({
   infinite: true,
   slidesToShow: 3,

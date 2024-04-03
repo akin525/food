@@ -23,7 +23,7 @@
             </div>
         @endif
         <div class="col-xxl-9">
-            <form method="post" class="form-border-1" action="{{route('admin/addproducts')}}" enctype="multipart/form-data">
+            <form method="post" class="form-border-1" action="{{route('admin/addproducts1')}}" enctype="multipart/form-data">
                 @csrf
             <div class="row">
                 <div class="col-lg-8">
@@ -94,9 +94,30 @@
                                 <div class="mb-7">
                                     <img src="https://templates.g5plus.net/glowing-bootstrap-5/assets/images/dashboard/upload.svg" width="102" class="d-block mx-auto" alt>
                                 </div>
-                                <input name="image" class="form-control" type="file">
+                                <input name="image" class="form-control" id="file-input" type="file">
                             </div>
+                            <div class="card card-body" id="image-preview"></div>
+
                         </div>
+                        <script>
+                            document.getElementById('file-input').addEventListener('change', function(event) {
+                                var file = event.target.files[0];
+                                var reader = new FileReader();
+
+                                reader.onload = function(event) {
+                                    var img = new Image();
+                                    img.src = event.target.result;
+                                    img.onload = function() {
+                                        var preview = document.getElementById('image-preview');
+                                        preview.innerHTML = ''; // Clear previous preview
+                                        preview.appendChild(img);
+                                    };
+                                };
+
+                                reader.readAsDataURL(file);
+                            });
+                        </script>
+
                     </div>
                     <div class="card mb-8 rounded-4">
                         <div class="card-header p-7 bg-transparent">

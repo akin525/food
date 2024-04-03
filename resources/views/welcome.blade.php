@@ -7,12 +7,12 @@
                 <div class="col-lg-7">
 
                     <div class="banner-taiteL">
-                        <h4 class="sam" style="color: white; font-size: 20px">Professional cooking services for corporate and private events.</h4>
+                        <h4 class="jost" style="color: white; font-size: 25px">Professional cooking services for corporate and private events.</h4>
                     </div>
 
                     <div class="banner-taiteL-btn">
 
-                        <a href="#" class="main-btn main-btn-two  cormorant-upright-regular">
+                        <a href="#" class="main-btn main-btn-two jost">
                                 <span>
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@
                                 </span>
                             Delivery</a>
 
-                        <a href="#" class=" main-btn-two-banner cormorant-upright-regular ">
+                        <a href="#" class=" main-btn-two-banner jost ">
                                 <span>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +62,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6  ">
                     <div class="sam">
-                        <h2 class="sam">Our Categories</h2>
+                        <h2 class="jost">Our Categories</h2>
                     </div>
                 </div>
 
@@ -371,7 +371,7 @@
                 <div class="col-lg-6" data-aos="fade-up">
                     <div class="popular-item-box">
                         <div class="popular-item-box-img">
-                            <img src="{{url($hots['image'])}}" alt="thumb">
+                            <img width="300" src="{{url($hots['image'])}}" alt="thumb">
 
                             <div class="popular-item-box-img-overlay">
                                 <div class="icon">

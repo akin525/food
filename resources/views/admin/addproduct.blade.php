@@ -61,7 +61,7 @@
                                     </div>
                                 </div>
                                 <div class="mb-8">
-                                    <label class="mb-4 fs-13px ls-1 fw-bold text-uppercase">Addition Information</label>
+                                    <label class="mb-4 fs-13px ls-1 fw-bold text-uppercase">Ingredients</label>
                                     <textarea placeholder="Type here" class="form-control" id="editor" name="addition" rows="4"></textarea>
                                 </div>
 {{--                                <label class="form-check mb-5" for="make-template">--}}
@@ -94,10 +94,30 @@
                                 <div class="mb-7">
                                     <img src="https://templates.g5plus.net/glowing-bootstrap-5/assets/images/dashboard/upload.svg" width="102" class="d-block mx-auto" alt>
                                 </div>
-                                <input name="image" class="form-control" type="file">
+                                <input name="image" class="form-control" id="file-input" type="file">
                             </div>
+                            <div class="card card-body" id="image-preview"></div>
+
                         </div>
                     </div>
+                    <script>
+                        document.getElementById('file-input').addEventListener('change', function(event) {
+                            var file = event.target.files[0];
+                            var reader = new FileReader();
+
+                            reader.onload = function(event) {
+                                var img = new Image();
+                                img.src = event.target.result;
+                                img.onload = function() {
+                                    var preview = document.getElementById('image-preview');
+                                    preview.innerHTML = ''; // Clear previous preview
+                                    preview.appendChild(img);
+                                };
+                            };
+
+                            reader.readAsDataURL(file);
+                        });
+                    </script>
                     <div class="card mb-8 rounded-4">
                         <div class="card-header p-7 bg-transparent">
                             <h4 class="fs-18px mb-0 font-weight-500">Organization</h4>

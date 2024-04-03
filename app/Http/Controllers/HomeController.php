@@ -117,6 +117,7 @@ function cakedetail($request)
 {
     $product=Products::where('id', $request)->first();
     $product1=Products::where('status', 1)->limit(9)->get();
+    $side=Products::where('status', 1)->limit(4)->get();
     $color=Colors::all();
     $layer=Layers::all();
     $size=Sizes::all();
@@ -131,7 +132,7 @@ function cakedetail($request)
     $category=Categories::all();
 
     return view('shop.cakedetails', compact('product', 'product1',
-    'cart', 'cartsum', 'category', 'color', 'layer', 'size'
+    'cart', 'cartsum', 'category', 'color', 'layer', 'size', 'side'
     ));
 
 }
